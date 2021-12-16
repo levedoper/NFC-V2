@@ -1,0 +1,25 @@
+body {
+    background-image: url("RESOURCES/bg.jpg");
+    background-position: center;
+    background-clip: border-box;
+    background-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+.subcontainers {
+    width: 50%;
+    background-color: white;
+    float: left;
+}
+
+#test {
+    font-size: 100px;
+}
