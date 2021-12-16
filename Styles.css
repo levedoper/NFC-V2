@@ -10,16 +10,75 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+}
 .container {
     width: 100%;
 }
 
+#div1 {
+    background-color: rgb(240, 240, 240);
+}
+
 .subcontainers {
+    text-align: center;
     width: 50%;
-    background-color: white;
     float: left;
 }
 
 #test {
     font-size: 100px;
 }
+
+#hsLgForm {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 40px;
+    position:absolute;
+}
+
+#gLogin {
+    background-color: rgb(0, 3, 185);
+    width: 50%;
+    height: 80px;
+    margin-left: 25%;
+}
+
+.hsButtons {
+    width: 100%;
+}
+
+#hsLoginButton {
+    border-color: black;
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#hsRegisterButton {
+    border-color: black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 40%;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.hsInput {
+    margin-top: 30px;
+    height: 20px;
+    width: 70%;
+    border-radius: 10px;
+    border-color: black;
+}
+

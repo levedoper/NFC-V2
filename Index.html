@@ -2,22 +2,64 @@
 <html>
     <head>
         <link href="Styles.css" rel="stylesheet">
-        <script src="Functions.js" type="text/javascript"></script> 
-        <script>
-        </script>
+        <script src="Functions.js" type="text/javascript"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poiret+One&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <div class="subcontainers">
-
+            <div class="subcontainers" id="div1">
+                <img src="logo.webp" id="hsLogo">
+                <h1 id="hsWelcome">BIENVENIDO</h1>
+                <h2 id="hsInfo">EN ESTA PÁGINA PODRAS EDITAR<BR>LA INFORMACIÓN DE TU PERFIL</h2>
+                
             </div>
-            <div class="subcontainers" id="2nd">
-                <p id="test"></p>    
-                <script>
-                    window.onresize = resizeHeight("2nd");
-                    window.addEventListener('resize', resizeHeight("2nd"));
-                </script>
+            <div class="subcontainers">
+                <div id="hsLgForm">
+                    <div id="gLogin">
+                        <P style="color: white; font-size: 30px;">google login</P>
+                    </div>
+                    <form>
+                        <div id="hsInputs">
+                            <div>
+                                <input id="formEmail" class="hsInput">
+                            </div>
+                            <div>
+                                <input id="formPassword" class="hsInput">
+                            </div>
+                        </div>
+                        <div id="hsButtonsContainer">
+                            <div id="hsLogin" class="hsButtons">
+                                <button id="hsLoginButton" class="hsButtonsObj">
+                                    LOG IN
+                                </button>
+                            </div>
+                            <div id="hsRegister" class="hsButtons">
+                                <button id="hsRegisterButton" class="hsButtonsObj">
+                                    CREATE ACCOUNT
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+        <script>
+            let carajo = 0;
+            window.onresize = window.onload = () => {
+                carajo++;
+                adjustObjHeight("div1");
+                adjustTopMargin("hsLogo", 35, 0.17);
+                adjustTopMargin("hsWelcome", 35, 0.17);
+                adjustTopMargin("hsInfo", 0, 0.12);
+                setRelHeight("hsLgForm", 0.7);
+                adjustTopMargin("hsLgForm", 0, 0.15)
+                adjustTopMargin("gLogin", 40, 0.19)
+                adjustTopMargin("hsInputs", 0, 0.03)
+                adjustTopMargin("hsButtonsContainer",0,0.06)
+                adjustTopMargin("hsRegisterButton",0,0.04)
+            }
+        </script>
     </body>
 </html>
